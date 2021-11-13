@@ -1,0 +1,30 @@
+<!--Include header-->
+<%- include("include/_header.ejs")%>
+<!--/Include header-->
+
+  <!--Main site-->
+  <main id="site-main">
+    <div class="container">
+        <div class="text-center box-nav d-flex justify-between">
+          <div class="filter">
+              <a href="/"><i class="fas fa-angle-double-left "></i>All users</a>
+          </div>
+        </div>
+
+        <div class="form-title text-center">
+            <!-- <h3 class="text-dark">Update User</h3> -->
+            <h3 class="text-dark">New  User</h3>
+            <!-- <span class="text-light">Update new account(s) below</span> -->
+            <span class="text-light">Add  new  account (s)  below</span>
+        </div>
+
+        <!-- Add user form -->
+        <%- include("include/_form.ejs")%>
+
+    </div>
+</main>
+<!--/Main site-->
+
+<!--Include footer-->
+<%- include("include/_footer.ejs")%>
+<!--/Include footer-->

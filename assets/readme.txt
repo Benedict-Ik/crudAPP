@@ -1,0 +1,1 @@
+All the assets of your project is created here

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand brand-text-color">Inventory Control System</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--/Header-->
+
+    <!--Main site-->
+    <main id="site-main">
+        <div class="container">
+            <div class="text-center box-nav d-flex justify-between">
+                <a href="/add-user" class="border-shadow">
+                    <span class="text-gradient">New User<i class="fas fa-user"></i></span>
+                </a>
+            </div>
+
+            <!--Form handling-->
+            <!-- <form action="/" method="POST">
+
+            </form> -->
+
+            <!-- Form Handling -->
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Benedict</td>
+                            <td>Odoh</td>
+                            <td>benedict.ik98@gmail.com</td>
+                            <td>Active</td>
+                            <td>
+                                <a href="#" class="btn-border-shadow update">
+                                    <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                                </a>
+                                <a class="btn-border-shadow delete">
+                                    <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>Active</td>
+                            <td>
+                                <a href="#" class="btn-border-shadow update">
+                                    <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                                </a>
+                                <a class="btn-border-shadow delete">
+                                    <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Mary</td>
+                            <td>Clara</td>
+                            <td>maryclary@hotmail.com</td>
+                            <td>Active</td>
+                            <td>
+                                <a href="#" class="btn-border-shadow update">
+                                    <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                                </a>
+                                <a class="btn-border-shadow delete">
+                                    <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>James</td>
+                            <td>Roberson</td>
+                            <td>jamieonline@example.com</td>
+                            <td>Inactive</td>
+                            <td>
+                                <a href="#" class="btn-border-shadow update">
+                                    <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                                </a>
+                                <a class="btn-border-shadow delete">
+                                    <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Elizabeth</td>
+                            <td>Adetola</td>
+                            <td>officiallizzy@yahoo.com</td>
+                            <td>Inactive</td>
+                            <td>
+                                <a href="#" class="btn-border-shadow update">
+                                    <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                                </a>
+                                <a class="btn-border-shadow delete">
+                                    <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </thead>
+                </table>
+            </form>
+            <!-- /Form Handling-->
+        </div>
+    </main>
+    <!--/Main site-->
+</body>
+
+</html>

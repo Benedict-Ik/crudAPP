@@ -1,0 +1,110 @@
+<% for (var i =0; i < users.length; i++) {%>
+
+
+<tr>
+    <td><%= i + 1 %></td>
+    <td><%= users[i].name %></td>
+
+    <!-- <td><%= users[i].firstName %></td>
+    <td><%= users[i].lastName %></td> -->
+    <td><%= users[i].email %></td>
+    <td><%= users[i].gender %></td>
+
+    <!-- new entries -->
+    <td><%= users[i].location %></td>
+    <!-- /new entries -->
+
+    <td><%= users[i].status %> </td>
+
+    <td>
+        <!-- Calling specific queried user id to render (render.js). Details passed in value attr of update_user.ejs file  -->
+        <a href="/update-user?id=<%= users[i]._id %>" class="btn-border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+
+        <!-- nav to index.js to write a script on deleting users with targeted id -->
+        <a class="btn-border-shadow delete" data-id="<%= users[i]._id %>">
+            <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+        </a>
+    </td>
+</tr>
+
+<!-- 
+<tr>
+    <td>1</td>
+    <td>Benedict</td>
+    <td>Odoh</td>
+    <td>benedict.ik98@gmail.com</td>
+    <td>Active</td>
+    <td>
+        <a href="/update-user" class="btn-border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn-border-shadow delete">
+            <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>John</td>
+    <td>Doe</td>
+    <td>johndoe@gmail.com</td>
+    <td>Active</td>
+    <td>
+        <a href="/update-user" class="btn-border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn-border-shadow delete">
+            <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Mary</td>
+    <td>Clara</td>
+    <td>maryclary@hotmail.com</td>
+    <td>Active</td>
+    <td>
+        <a href="/update-user" class="btn-border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn-border-shadow delete">
+            <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>James</td>
+    <td>Roberson</td>
+    <td>jamieonline@example.com</td>
+    <td>Inactive</td>
+    <td>
+        <a href="/update-user" class="btn-border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn-border-shadow delete">
+            <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+        </a>
+    </td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>Elizabeth</td>
+    <td>Adetola</td>
+    <td>officiallizzy@yahoo.com</td>
+    <td>Inactive</td>
+    <td>
+        <a href="/update-user" class="btn-border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn-border-shadow delete">
+            <span class="text-gradient"><i class="fas fa-trash-alt"></i></span>
+        </a>
+    </td>
+</tr> -->
+
+
+<% } %>
